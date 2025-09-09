@@ -20,21 +20,7 @@ o - Реализовано #6 - Метод set_center(x, y, z), который �
 o - Реализовано #7 - Метод is_point_inside(x, y, z), который принимает координаты некой точки в трёхмерном пространстве и возвращает True или False в зависимости от того, находится ли точка внутри сферы
 """
 
-# class Sphere:
-#     def __init__(self, radius = None, x = None, y = None, z = None):
-#         self.radius = radius
-#         self.x = x
-#         self.y = y
-#         self.z = z
-#         self.center = (self.x, self.y, self.z)
-#         self.is_point_inside = True
-#         self.is_point_outside = False
-#
-#     def if_there_is_no_argument(self):
-#         self.radius = 1
-#         self.x = 0
-#         self.y = 0
-#         self.z = 0
+
 import math
 
 class Sphere:
@@ -159,4 +145,5 @@ print('')
 print('9___________________________')
 sph_3.set_radius(30)
 print(sph_3.radius)
+
 print(sph_3.is_point_inside_or_outside_or_on_the_surface(-20,-20,-20))
