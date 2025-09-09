@@ -10,11 +10,20 @@ print("Lesson 11. Home task №1.")
 
 """
 
-
-
+class Soda:
+    taste = ""
+    def __init__(self, taste_of_soda=taste):
+        self.taste_of_soda = taste_of_soda
+        if (self.taste_of_soda == ""):
+            print('')
+            print('У вас обычная газировка')
+            print('')
+        else:
+            print('')
+            print(f'У Вас газировка с вкусом: {self.taste_of_soda}')
+            print('')
 
 def choice_action():
-    taste = ""
     while True:
         print('              Меню')
         print('1. Газировка со вкусом "Клубника"')
@@ -33,20 +42,10 @@ def choice_action():
         if choice == '4':
             taste = ''
         elif choice == '5':
+            print('До новых встреч.')
             break
-
-
-        class Soda:
-            def __init__(self, taste_of_soda=taste):
-                self.taste_of_soda = taste_of_soda
-                if (self.taste_of_soda == ""):
-                    print('')
-                    print('У вас обычная газировка')
-                    print('')
-                else:
-                    self.taste_of_soda = self.taste_of_soda.strip()
-                    print('')
-                    print(f'У Вас газировка с вкусом: {self.taste_of_soda}')
-                    print('')
         Soda(taste)
+
+        input('Нажмите Enter для перезапуска программы.')
+        print('')
 choice_action()
